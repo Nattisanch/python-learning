@@ -32,12 +32,12 @@ def createAccount():
 print("""--------------------------
 Welcome to the tasks planners!
 ------------------------------------""")
-userselect = input("""Press 1 to sign in.
+userselect = int(input("""Press 1 to sign in.
 Press 2 to Create Account.
-""")
+"""))
 
-if  userselect == "1":
+if  userselect == 1:
     login()
 else:
-    if userselect == "2":
+    if userselect == 2:
         createAccount()
